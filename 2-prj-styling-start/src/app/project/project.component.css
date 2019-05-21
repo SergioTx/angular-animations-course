@@ -6,6 +6,7 @@
   background: #ececec;
   margin: 15px 0;
   box-shadow: 3px 3px 2px #ccc;
+  transition: border-color 0.3s ease-in-out;
 }
 
 :host(.marked) {
