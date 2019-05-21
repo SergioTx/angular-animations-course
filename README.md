@@ -1,1 +1,1 @@
-# angular-animations-course
+https://www.udemy.com/angular-styling-animations-for-angular-2-and-angular-4/
