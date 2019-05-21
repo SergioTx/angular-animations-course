@@ -12,6 +12,11 @@ h1 {
   border: 1px solid red;
 }
 
+:host-context(.boring #very-boring) {
+  border: 1px solid #ccc;
+  color: #ccc;
+}
+
 // #quote {
 //   border: 1px solid black;
 //   padding: 20px;
