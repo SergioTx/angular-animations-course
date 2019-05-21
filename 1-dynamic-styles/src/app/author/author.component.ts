@@ -10,7 +10,7 @@ import { Component, OnInit, ViewEncapsulation } from '@angular/core';
     color: #8c8c8c;
   }
   `],
-  encapsulation: ViewEncapsulation.ShadowDom,
+  encapsulation: ViewEncapsulation.Emulated,
 })
 export class AuthorComponent implements OnInit {
 
