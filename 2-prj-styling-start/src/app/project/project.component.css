@@ -8,6 +8,10 @@
   box-shadow: 3px 3px 2px #ccc;
 }
 
+:host(.marked) {
+  padding: 14px;
+}
+
 .form-control {
   display: inline-block;
   width: 50%;
