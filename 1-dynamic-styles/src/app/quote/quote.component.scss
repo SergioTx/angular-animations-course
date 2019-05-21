@@ -8,6 +8,10 @@ h1 {
   padding: 20px;
 }
 
+:host(.favourite) {
+  border: 1px solid red;
+}
+
 // #quote {
 //   border: 1px solid black;
 //   padding: 20px;
