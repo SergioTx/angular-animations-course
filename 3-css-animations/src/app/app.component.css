@@ -2,5 +2,9 @@ div {
   height: 100px;
   width: 100px;
   background-color: red;
-  transition: background-color 0.5s ease-out;
+  transition: background-color 0.5s ease-out 1s, width 1s ease-out 0.2s;
+}
+
+.marked {
+  width: 300px;
 }
