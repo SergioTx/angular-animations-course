@@ -9,7 +9,8 @@
           [ngStyle]="{'width.px': isFavourite? 600:400}">
         </app-quote>
       </div>
-      <div class="boring">
+      <button class="btn btn-primary" (click)="onShowBoring(boringBlock)">Show boring Quotes</button>
+      <div class="boring" #boringBlock style="display:none">
         <div id="very-boring">
           <app-quote></app-quote>
         </div>
