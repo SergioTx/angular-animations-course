@@ -17,6 +17,13 @@ h1 {
   color: #ccc;
 }
 
+// :host-context(.boring #very-boring) /deep/ h1{
+//   color: #ccc;
+// }
+:host-context(.boring #very-boring) >>> h1{ //same as deep
+  color: #ccc;
+}
+
 // #quote {
 //   border: 1px solid black;
 //   padding: 20px;
