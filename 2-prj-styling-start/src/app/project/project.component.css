@@ -1,0 +1,14 @@
+:host {
+  display: block;
+  border: 1px solid gray;
+  border-radius: 3px;
+  padding: 15px;
+  background: #ececec;
+  margin: 15px 0;
+  box-shadow: 3px 3px 2px #ccc;
+}
+
+.form-control {
+  display: inline-block;
+  width: 50%;
+}
