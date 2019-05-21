@@ -1,2 +1,6 @@
-<div [ngClass]="{marked: divClicked}" (click)="divClicked = !divClicked"
+<div id="div1" [ngClass]="{marked: divClicked}" (click)="divClicked = !divClicked"
   [ngStyle]="{backgroundColor: divClicked?'blue':'red'}"></div>
+
+<hr>
+
+<div id="div2" (click)="doAnimate=true" [ngClass]="{animate: doAnimate}"></div>
