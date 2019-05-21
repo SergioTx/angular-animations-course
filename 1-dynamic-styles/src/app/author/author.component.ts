@@ -3,7 +3,13 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-author',
   templateUrl: './author.component.html',
-  styleUrls: ['./author.component.scss']
+  styles: [`
+  h1 {
+    margin:0;
+    font-size: 12px;
+    color: #8c8c8c;
+  }
+  `]
 })
 export class AuthorComponent implements OnInit {
 
