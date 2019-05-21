@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 
 @Component({
   selector: 'app-author',
@@ -9,7 +9,8 @@ import { Component, OnInit } from '@angular/core';
     font-size: 12px;
     color: #8c8c8c;
   }
-  `]
+  `],
+  encapsulation: ViewEncapsulation.ShadowDom,
 })
 export class AuthorComponent implements OnInit {
 
