@@ -5,7 +5,8 @@
         My quote
       </h1>
       <div class="interesting">
-        <app-quote (click)="isFavourite = !isFavourite" [ngClass]="{'favourite super-favourite': isFavourite}">
+        <app-quote (click)="isFavourite = !isFavourite" [ngClass]="{'favourite super-favourite': isFavourite}"
+          [ngStyle]="{'width.px': isFavourite? 600:400}">
         </app-quote>
       </div>
       <div class="boring">
