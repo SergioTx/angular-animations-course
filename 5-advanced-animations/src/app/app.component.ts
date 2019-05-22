@@ -1,11 +1,11 @@
 import { Component } from '@angular/core';
-import { showStateTrigger, animateStateTrigger } from './animations';
+import { showStateTrigger, animateStateTrigger, listStateTrigger } from './animations';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'],
-  animations: [showStateTrigger, animateStateTrigger]
+  animations: [showStateTrigger, animateStateTrigger, listStateTrigger]
 })
 export class AppComponent {
   isShown = false;
