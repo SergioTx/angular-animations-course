@@ -1,2 +1,2 @@
 <button (click)="isShown = !isShown">Toggle Element</button>
-<p [@showState]="isShown ? 'shown' : 'notShown'" *ngIf="isShown">You can see me now</p>
+<p @showState *ngIf="isShown">You can see me now</p>
