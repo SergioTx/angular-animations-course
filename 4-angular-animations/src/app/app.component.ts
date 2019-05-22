@@ -21,5 +21,12 @@ import { trigger, state, style } from '@angular/animations';
   ]
 })
 export class AppComponent {
+  clickInfo = 'default';
 
+  onClickSimple() {
+    this.clickInfo = 'clicked';
+    setTimeout(() => {
+      this.clickInfo = 'default';
+    }, 3000);
+  }
 }
