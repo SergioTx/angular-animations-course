@@ -1,1 +1,1 @@
-<div (click)="onClickSimple()" [@clickedState]="clickInfo"></div>
+<div (click)="onClickSimple()" (mousedown)="clickInfo = 'mousedown'" [@clickedState]="clickInfo"></div>
