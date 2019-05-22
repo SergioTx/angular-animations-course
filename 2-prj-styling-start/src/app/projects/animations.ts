@@ -1,4 +1,4 @@
-import { trigger, state, style } from "@angular/animations";
+import { trigger, state, style, transition, animate } from "@angular/animations";
 
 export const markedTrigger = trigger('markedTrigger', [
   state('default', style({
@@ -9,4 +9,5 @@ export const markedTrigger = trigger('markedTrigger', [
     border: '2px solid blue',
     backgroundColor: '#caeff9',
   })),
+  transition('default <=> marked', animate('300ms ease-out')),
 ]);

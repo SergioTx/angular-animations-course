@@ -4,10 +4,10 @@
 
 .marked {
   border: 2px solid blue;
-  animation: marked 0.3s ease-out forwards;
+  /* animation: marked 0.3s ease-out forwards; */
 }
 
-@keyframes marked {
+/* @keyframes marked {
   0%{
     transform: scale(1);
   }
@@ -17,7 +17,7 @@
   100%{
     transform: scale(1);
   }
-}
+} */
 
 .loading-bar {
   width: 200px;
