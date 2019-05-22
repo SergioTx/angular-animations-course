@@ -33,6 +33,7 @@ import { trigger, state, style, transition, animate } from '@angular/animations'
       state('unselected', style({
         border: '1px solid black',
         padding: '5px',
+        backgroundColor: 'white',
       })),
       state('selected', style({
         border: '2px solid blue',
@@ -44,8 +45,9 @@ import { trigger, state, style, transition, animate } from '@angular/animations'
           border: '2px solid black',
           padding: '4px',
         }),
-        animate(2000, style({
-          backgroundColor: 'red'
+        animate('600ms 100ms ease-out', style({
+          backgroundColor: 'red',
+          transform: 'scale(1.05)',
         })),
         animate(2000),
       ])
