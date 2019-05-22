@@ -8,4 +8,5 @@
 <hr>
 
 <button (click)="onAddElement()">Add Element</button>
-<div class="test-result" @listState *ngFor="let testResult of testResults">{{testResult}}</div>
+<div class="test-result" @listState (@listState.start)="onAnimationStarted($event)"
+  (@listState.done)="onAnimationDone($event)" *ngFor="let testResult of testResults">{{testResult}}</div>
