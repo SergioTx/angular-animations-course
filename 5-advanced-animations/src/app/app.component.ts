@@ -11,4 +11,9 @@ export class AppComponent {
   isShown = false;
   width = 400;
   animate = false;
+  testResults = [];
+
+  onAddElement() {
+    this.testResults.push(Math.random());
+  }
 }
