@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { animate, style, transition, trigger } from '@angular/animations';
+import { animate, style, transition, trigger, query } from '@angular/animations';
 
 @Component({
   selector: 'app-root',
@@ -9,10 +9,17 @@ import { animate, style, transition, trigger } from '@angular/animations';
     trigger('panelState', [
       transition(':enter', [
         style({
+          transform: 'translateX(100%)',
           opacity: 0,
-          transform: 'translateX(100%)'
         }),
-        animate(200)
+        animate(300),
+        query('.panel-heading', [
+          style({
+            transform: 'translateY(-300px)',
+            opacity: 0,
+          }),
+          animate(300),
+        ]),
       ]),
       transition(':leave', [
         animate(200, style({
