@@ -14,6 +14,12 @@ import { animate, style, transition, trigger, query, group } from '@angular/anim
           //   opacity: 0,
           // }),
           // animate(300),
+          query(':self', [
+            style({
+              opacity: 0,
+            }),
+            animate(1000),
+          ]),
           query('.panel-heading', [
             style({
               transform: 'translateY(-300px)',
@@ -42,7 +48,18 @@ import { animate, style, transition, trigger, query, group } from '@angular/anim
           transform: 'translateX(-100%)',
           opacity: 0
         }))
-      ])
+      ]),
+      transition('* => *', [
+        query(':enter', [
+          style({
+            transform: 'scale(1)',
+          }),
+          animate(200, style({
+            transform: 'scale(1.1)',
+          })),
+          animate(100),
+        ],
+      ]),
     ])
   ]
 })
