@@ -5,8 +5,8 @@ import { ProjectsComponent } from './projects/projects.component';
 import { UsersComponent } from './users/users.component';
 
 const appRoutes: Routes = [
-  { path: '', component: ProjectsComponent },
-  { path: 'users', component: UsersComponent }
+  { path: '', component: ProjectsComponent, data: { animation: { page: 'rootPage' } } },
+  { path: 'users', component: UsersComponent, data: { animation: { page: 'userPage' } } }
 ];
 
 @NgModule({
@@ -15,4 +15,4 @@ const appRoutes: Routes = [
   ],
   exports: [RouterModule]
 })
-export class AppRoutingModule {}
+export class AppRoutingModule { }
