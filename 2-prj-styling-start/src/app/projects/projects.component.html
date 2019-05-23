@@ -22,11 +22,13 @@
     <div class="loading-bar" *ngIf="!projects">
       <div class="loading-bar-element" *ngIf="progress != 'finished'"></div>
     </div>
-    <app-project *ngFor="let prj of displayedProjects; let i = index" [project]="prj"
-      [@itemState]="createNew ? 'slidDown' : 'slidUp'" (@itemState.done)="onItemAnimated($event, i)"
-      [@markedTrigger]="markedPrjIndex === i?'marked':'default'"
-      [ngClass]="{marked: markedPrjIndex === i, inactive: prj.status==='inactive'}"
-      (statusUpdated)="onStatusUpdated($event, i)" (projectDeleted)="onProjectDeleted(i)" (click)="markedPrjIndex = i">
-    </app-project>
+    <div [@listState]="projects?.length">
+      <app-project *ngFor="let prj of projects; let i = index" [project]="prj"
+        [@itemState]="createNew ? 'slidDown' : 'slidUp'" [@markedTrigger]="markedPrjIndex === i?'marked':'default'"
+        [ngClass]="{marked: markedPrjIndex === i, inactive: prj.status==='inactive'}"
+        (statusUpdated)="onStatusUpdated($event, i)" (projectDeleted)="onProjectDeleted(i)"
+        (click)="markedPrjIndex = i">
+      </app-project>
+    </div>
   </div>
 </div>
