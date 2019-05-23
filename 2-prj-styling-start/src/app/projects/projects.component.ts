@@ -13,7 +13,7 @@ import { routeFadeStateTrigger, routeSlideStateTrigger } from '../shared/route-a
     markedTrigger,
     itemStateTrigger,
     slideStateTrigger,
-    routeFadeStateTrigger,
+    // routeFadeStateTrigger,
     routeSlideStateTrigger,
     listStateTrigger,
   ],
