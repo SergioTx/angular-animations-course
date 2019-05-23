@@ -59,6 +59,12 @@ import { animate, style, transition, trigger, query, group } from '@angular/anim
           })),
           animate(100),
         ], { optional: true }),
+        query('div p, button', [
+          animate(300, style({
+            color: 'red',
+          })),
+          animate(200),
+        ])
       ]),
     ])
   ]
