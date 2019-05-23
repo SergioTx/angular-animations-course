@@ -58,7 +58,7 @@ import { animate, style, transition, trigger, query, group } from '@angular/anim
             transform: 'scale(1.1)',
           })),
           animate(100),
-        ]
+        ]),
       ]),
     ])
   ]
